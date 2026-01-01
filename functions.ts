@@ -13,3 +13,12 @@ function prompt(systemPrompt:string,userPrompt:string){
 }
 
 console.log(prompt('You are a helpful assistant','how to reverse a string?'));
+
+
+// Void return type for a function, this means that nothing is returned from the function.
+
+function generateLog(message:string) : void {
+  console.log(message);
+}
+
+
