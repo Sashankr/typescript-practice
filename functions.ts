@@ -21,4 +21,12 @@ function generateLog(message:string) : void {
   console.log(message);
 }
 
+type LoggerCallback = (s1: string, s2:string) => string
+
+
+
+function setLoggerTimeout(loggerCallback:LoggerCallback,delay:number){
+  console.log('Test');  
+}
+
 
