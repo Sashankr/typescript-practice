@@ -29,4 +29,7 @@ function setLoggerTimeout(loggerCallback:LoggerCallback,delay:number){
   console.log('Test');  
 }
 
-
+// Importing types with type keyword.
+// We can import types from external files with the help of type keyword, what this does is, it reduces bundle size when generating production build
+// This is because types are not required in production, these are only necessary to debug while writing our code.
+// ex : import type { User, Role } from './models' 
