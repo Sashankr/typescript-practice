@@ -43,3 +43,14 @@ function processTicketId(ticketId: string | number) {
 
 const ticketResponse = processTicketId("Support-124");
 console.log(ticketResponse);
+
+
+// Optional Parameters
+// We can add then in function by adding question mark before specifying the type
+
+function add(a:number,b:number,logMessage:?string){
+  if(logMessage){
+    console.log(logMessage);
+  }
+  return a + b;
+}
