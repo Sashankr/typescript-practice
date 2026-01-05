@@ -61,3 +61,4 @@ function calculateWorkHours(workHours:number,extraHours=0){
 }
 
 type Direction = "north"; // Literal type, Direction can only be north
+type Directions = "north" | "south" | "east" | "west";
