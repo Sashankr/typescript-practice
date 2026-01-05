@@ -54,3 +54,8 @@ function add(a:number,b:number,logMessage:?string){
   }
   return a + b;
 }
+
+// Default Parameters
+function calculateWorkHours(workHours:number,extraHours=0){
+  return workHours + extraHours;
+}
