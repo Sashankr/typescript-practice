@@ -59,3 +59,5 @@ function add(a:number,b:number,logMessage:?string){
 function calculateWorkHours(workHours:number,extraHours=0){
   return workHours + extraHours;
 }
+
+type Direction = "north"; // Literal type, Direction can only be north
