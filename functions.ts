@@ -44,19 +44,18 @@ function processTicketId(ticketId: string | number) {
 const ticketResponse = processTicketId("Support-124");
 console.log(ticketResponse);
 
-
 // Optional Parameters
 // We can add then in function by adding question mark before specifying the type
 
-function add(a:number,b:number,logMessage:?string){
-  if(logMessage){
+function add(a: number, b: number, logMessage?: string) {
+  if (logMessage) {
     console.log(logMessage);
   }
   return a + b;
 }
 
 // Default Parameters
-function calculateWorkHours(workHours:number,extraHours=0){
+function calculateWorkHours(workHours: number, extraHours = 0) {
   return workHours + extraHours;
 }
 
@@ -66,4 +65,10 @@ type Directions = "north" | "south" | "east" | "west";
 // Template Literal Types
 
 type Class = "wizard" | "warrior" | "rogue";
-type Hero = `elf ${Class}`
+type Hero = `elf ${Class}`;
+
+type errorCodes = 500 | 403 | 401;
+type LogMessage = `${string}: ${errorCodes}`;
+
+const message: LogMessage = `An Error Occured: ${500}`;
+console.log(message);
