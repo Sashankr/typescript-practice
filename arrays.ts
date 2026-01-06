@@ -10,3 +10,10 @@ type listOfActiveUsers = Array<string>;
 
 type comments = (string | number) [];
 
+function userInfo(admin,...remaining){
+  console.log(admin);
+  console.log(remaining);
+}
+
+userInfo('sashank','joel','henry');
+
